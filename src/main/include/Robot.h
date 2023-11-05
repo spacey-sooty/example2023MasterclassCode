@@ -1,17 +1,6 @@
 #pragma once
 
-#include <string>
-
 #include <frc/TimedRobot.h>
-#include <frc/smartdashboard/SendableChooser.h>
-
-#include <units/time.h>
-#include <frc/RobotController.h>
-
-#include "Intake.h"
-#include "Shooter.h"
-#include "RobotMap.h"
-#include "Drivebase.h"
 
 class Robot : public frc::TimedRobot {
  public:
@@ -27,9 +16,5 @@ class Robot : public frc::TimedRobot {
   void TestPeriodic() override;
 
  private:
-  RobotMap robotMap;
-  Intake *intake;
-  Shooter *shooter;
-  Drivebase *drivebase;
-};
 
+};
